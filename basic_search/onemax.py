@@ -12,7 +12,6 @@ MIMIC=[]
 size_range = range(20,100,20)
 
 for size in size_range:
-    print (size)
     fitness = mlrose.OneMax()
     problem_fit = mlrose.DiscreteOpt(length = size,fitness_fn = fitness,maximize = True,max_val = 2)
     

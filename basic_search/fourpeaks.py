@@ -11,7 +11,6 @@ SA=[]
 MIMIC=[]
 size_range = range(20,100,20)
 for size in size_range:
-    print (size)
     fitness = mlrose.FourPeaks(t_pct=0.2)
     problem_fit = mlrose.DiscreteOpt(length = size,fitness_fn = fitness,maximize = True,max_val = 2)
     
